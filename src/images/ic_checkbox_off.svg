@@ -1,0 +1,10 @@
+<svg id="ic_checkbox_off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_107" data-name="사각형 107" width="20" height="20" fill="#aaa"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_108" data-name="그룹 108" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="패스_86" data-name="패스 86" d="M15.855,20H4.146A4.151,4.151,0,0,1,0,15.854V4.146A4.151,4.151,0,0,1,4.146,0H15.855A4.15,4.15,0,0,1,20,4.146V15.854A4.15,4.15,0,0,1,15.855,20M4.146,1.363A2.786,2.786,0,0,0,1.363,4.146V15.854a2.786,2.786,0,0,0,2.783,2.783H15.855a2.786,2.786,0,0,0,2.783-2.783V4.146a2.786,2.786,0,0,0-2.783-2.783Z" transform="translate(0 0)" fill="#aaa"/>
+  </g>
+</svg>

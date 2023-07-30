@@ -1,0 +1,65 @@
+.box_login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 80px 22px 0;
+}
+
+.box_login > .box_title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.box_login > .box_title > h1 {
+  color: var(--color-black);
+  font-size: calc(var(--font-size) * 2);
+  font-weight: 600;
+}
+
+.box_login > .box_title > p {
+  margin-top: 10px;
+  color: var(--color-gray);
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.box_login > .box_login_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 135px;
+  margin: 60px 0 30px;
+}
+
+.box_login > .box_login_gosignup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid var(--color-disabled);
+}
+
+.box_login > .box_login_gosignup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid var(--color-disabled);
+}
+
+.box_login > .box_login_gosignup > span {
+  color: var(--color-gray);
+  font-size: var(--font-size);
+}
+
+.box_login > .box_login_gosignup > button {
+  background: none;
+  color: var(--color-primary);
+  font-size: var(--font-size);
+  text-decoration: underline;
+  cursor: pointer;
+}

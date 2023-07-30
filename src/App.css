@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+/* 한글 Font */
+@font-face {
+  font-family: "pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+  unicode-range: U+AC00-D7AF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 영문 Font */
+@font-face {
+  font-family: "Kanit";
+  src: url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap");
+  unicode-range: U+0041-005A, U+0061-007A;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  /* color */
+  --color-primary: #5393fc;
+  --color-secondary: #c4dcff;
+  --color-disabled: #dddddd;
+  --color-white: #ffffff;
+  --color-black: #222222;
+  --color-gray: #aaaaaa;
+  --color-gray-secondary: #eeeeee;
+  --color-light-gray: #f7f7f7;
+
+  /* font */
+  --font-size: 16px;
+
+  /* viewport value */
+  --vh: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Kanit", "pretendard", -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html,
+body {
+  height: var(--vh);
 }

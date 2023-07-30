@@ -1,0 +1,73 @@
+.box_create_nft {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 22px 0;
+}
+
+.box_create_nft > .box_title > h1 {
+  margin-bottom: 10px;
+  color: var(--color-black);
+  font-size: calc(var(--font-size) * 1.8);
+  font-weight: 600;
+}
+
+.box_create_nft > .box_title > span {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--color-gray);
+  font-size: var(--font-size);
+  font-weight: 400;
+}
+
+/* Prompt css */
+.box_prompt {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+
+.box_prompt > div {
+  position: relative;
+}
+
+.box_prompt .prompt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: var(--color-light-gray);
+  border-radius: 20px;
+}
+
+.box_prompt .prompt > img:first-child {
+  width: 90px;
+  height: 90px;
+}
+
+.box_prompt .prompt > span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #666666;
+  font-size: var(--font-size);
+}
+
+.box_prompt .prompt > .ic_check {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../images//ic_check_off.svg);
+  background-repeat: no-repeat;
+}
+
+.box_prompt div > .prompt_radio {
+  display: none;
+}
+
+.box_prompt div > input:checked + label > .ic_check {
+  background-image: url(../../images//ic_check_on.svg);
+}

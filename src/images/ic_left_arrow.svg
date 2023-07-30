@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="ic_left_arrow" transform="translate(-15 -15)">
+    <rect id="사각형_2" data-name="사각형 2" width="40" height="40" transform="translate(15 15)" fill="none"/>
+    <path id="arrow-left-long-solid" d="M.494,102.8a1.6,1.6,0,0,0,0,2.264l6.4,6.4a1.6,1.6,0,0,0,2.264-2.264l-3.668-3.668H24.013a1.6,1.6,0,0,0,0-3.2H5.486l3.668-3.668a1.6,1.6,0,0,0-2.264-2.264l-6.4,6.4Z" transform="translate(21.682 -68.925)" fill="#222"/>
+  </g>
+</svg>

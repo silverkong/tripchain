@@ -1,0 +1,148 @@
+.box_profile {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.box_profile > .box_profile_image {
+  position: relative;
+  height: 170px;
+}
+
+.box_profile > .box_profile_image > .bg_profile {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-color: var(--color-secondary);
+}
+
+.box_profile > .box_profile_image > .box_image {
+  position: absolute;
+  top: 65px;
+  width: 100px;
+  height: 100px;
+  margin-left: 22px;
+  background-color: var(--color-gray-secondary);
+  border: 4px solid #ffffff;
+  border-radius: 50px;
+  box-shadow: 0px 3px 6px #0002;
+  overflow: hidden;
+}
+
+.box_profile > .box_profile_image > .box_image > img {
+  width: 100%;
+}
+
+.box_profile > .box_profile_info {
+  display: flex;
+  margin-top: 20px;
+  padding: 0 22px;
+}
+
+.box_profile > .box_profile_info > h3 {
+  margin-right: 10px;
+  color: var(--color-black);
+  font-size: calc(var(--font-size) * 1.75);
+  font-weight: 600;
+}
+
+.box_profile > .box_nft_list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 0 22px;
+}
+
+.box_profile > .box_nft_list > .box_nft_list_title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-disabled);
+}
+
+.box_profile > .box_nft_list > .box_nft_list_title > span {
+  color: var(--color-black);
+  font-size: var(--font-size);
+}
+
+.box_profile > .box_nft_list > .box_nft_list_title > span:first-child {
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.box_profile > .box_nft_list > div > .label_nft_list_content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  background-image: url(../../images/ic_checkbox_off.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.box_profile > .box_nft_list > div > input {
+  display: none;
+}
+
+.box_profile > .box_nft_list > div > input:checked + label {
+  background-image: url(../../images/ic_checkbox_on.svg);
+}
+
+.box_profile
+  > .box_nft_list
+  > div
+  > .label_nft_list_content
+  > .box_nft_list_content_img {
+  width: 60px;
+  height: 60px;
+  margin-left: 35px;
+  border: 1px solid var(--color-gray);
+  overflow: hidden;
+}
+
+.box_profile
+  > .box_nft_list
+  > div
+  > .label_nft_list_content
+  > .box_nft_list_content_img
+  > img {
+  width: 58px;
+}
+
+.box_profile
+  > .box_nft_list
+  > div
+  > .label_nft_list_content
+  > .box_nft_list_content_title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.box_profile
+  > .box_nft_list
+  > div
+  > .label_nft_list_content
+  > .box_nft_list_content_title
+  > span:first-child {
+  color: var(--color-black);
+  font-size: calc(var(--font-size) * 1.2);
+}
+
+.box_profile
+  > .box_nft_list
+  > div
+  > .label_nft_list_content
+  > .box_nft_list_content_title
+  > span:last-child {
+  color: var(--color-gray);
+  font-size: var(--font-size);
+}
+
+.box_profile
+  > .box_nft_list
+  > div
+  > .label_nft_list_content
+  > .txt_nft_list_content_price {
+  margin-left: auto;
+}

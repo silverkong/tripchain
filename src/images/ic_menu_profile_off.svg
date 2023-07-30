@@ -1,0 +1,12 @@
+<svg id="ic_menu_profile_off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_82" data-name="사각형 82" width="40" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_41" data-name="그룹 41" clip-path="url(#clip-path)">
+    <path id="패스_50" data-name="패스 50" d="M20,14.869a2.522,2.522,0,1,1-2.522,2.522A2.525,2.525,0,0,1,20,14.869m0-1.875a4.4,4.4,0,1,0,4.4,4.4,4.4,4.4,0,0,0-4.4-4.4" fill="#aaa"/>
+    <path id="패스_51" data-name="패스 51" d="M28.74,28.685H26.865a6.865,6.865,0,0,0-13.73,0H11.26a8.74,8.74,0,0,1,17.48,0" fill="#aaa"/>
+    <path id="패스_52" data-name="패스 52" d="M20,9.375A10.625,10.625,0,1,1,9.375,20,10.637,10.637,0,0,1,20,9.375M20,7.5A12.5,12.5,0,1,0,32.5,20,12.5,12.5,0,0,0,20,7.5" fill="#aaa"/>
+  </g>
+</svg>

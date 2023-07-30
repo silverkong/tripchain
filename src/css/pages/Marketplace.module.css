@@ -1,0 +1,76 @@
+.box_marketplace {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 22px 60px;
+}
+
+.box_title {
+  margin: 40px 0 60px;
+}
+
+.box_title > .txt_main_title {
+  color: var(--color-black);
+  font-size: calc(var(--font-size) * 2);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.box_title > .txt_sub_title {
+  margin-top: 10px;
+  color: var(--color-gray);
+  font-size: var(--font-size);
+  line-height: 1.3;
+}
+
+.box_nft_sell {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.box_nft_sell > .box_nft_seller {
+  display: flex;
+  align-items: center;
+}
+
+.box_nft_sell > .box_nft_seller > .box_nft_seller_profile {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: var(--color-gray-secondary);
+  border-radius: 15px;
+}
+
+.box_nft_sell > .box_nft_seller > .txt_nft_seller_nickname {
+  color: var(--color-black);
+  font-size: var(--font-size);
+  font-weight: 400;
+}
+
+.box_nft_sell > .box_nft_image {
+  margin-top: 15px;
+}
+
+.box_nft_sell > .box_nft_info {
+  margin-top: 15px;
+}
+
+.box_nft_sell > .box_nft_info > .txt_nft_title {
+  margin-bottom: 5px;
+  color: var(--color-black);
+  font-size: calc(var(--font-size) * 1.2);
+  font-weight: 400;
+}
+
+.box_nft_sell > .box_nft_info > .txt_nft_sell_type {
+  margin-right: 10px;
+  color: var(--color-gray);
+  font-size: var(--font-size);
+  font-weight: 400;
+}
+
+.box_nft_sell > .box_nft_info > .txt_nft_price {
+  color: var(--color-black);
+  font-size: var(--font-size);
+  font-weight: 400;
+}
