@@ -42,9 +42,25 @@
   border-radius: 20px;
 }
 
+.box_prompt .prompt_style {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: var(--color-light-gray);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 .box_prompt .prompt > img:first-child {
   width: 90px;
   height: 90px;
+}
+
+.box_prompt .prompt_style > img:first-child {
+  width: 100%;
 }
 
 .box_prompt .prompt > span {
@@ -54,7 +70,29 @@
   font-size: var(--font-size);
 }
 
+.box_prompt .prompt_style > span {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #ffffffaa;
+  color: var(--color-black);
+  font-size: var(--font-size);
+  text-align: center;
+}
+
 .box_prompt .prompt > .ic_check {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../images//ic_check_off.svg);
+  background-repeat: no-repeat;
+}
+
+.box_prompt .prompt_style > .ic_check {
   position: absolute;
   top: 20px;
   right: 20px;

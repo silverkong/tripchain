@@ -39,7 +39,11 @@ const Prompt = ({ id, name, src, alt, value }) => {
         value={value}
         className={Style.prompt_radio}
       />
-      <label htmlFor={id} className={Style.prompt} style={promptStyle}>
+      <label
+        htmlFor={id}
+        className={name === "style" ? Style.prompt_style : Style.prompt}
+        style={promptStyle}
+      >
         <img src={src} alt={alt} />
         <span>{alt}</span>
         <div className={Style.ic_check}></div>
