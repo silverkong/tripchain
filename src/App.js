@@ -1,3 +1,9 @@
+/**
+ * Tripchain
+ * @developer Sueun Cho, Rok Kwak, Eunbeen Jung, DoHyun Lim
+ * @version 1.1.1
+ */
+
 import "./App.css";
 import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";

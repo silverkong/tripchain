@@ -1,7 +1,7 @@
 .box_profile {
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
+  padding: 80px 0 150px;
 }
 
 .box_profile > .box_profile_image {
