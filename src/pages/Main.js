@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 import Style from "../css/pages/Main.module.css";
 
 ///////////////////////
@@ -14,6 +15,9 @@ import bgMain from "../images/bg_main.png";
 
 const Main = () => {
   const navigate = useNavigate();
+
+  // state
+  const frontState = useSelector((state) => state.front);
 
   // 모바일 웹페이지 반영 시 100vh 문제로 vh 재정의
   useEffect(() => {
@@ -32,13 +36,22 @@ const Main = () => {
         <div className={Style.box_overlay}>{/* overlay */}</div>
         <img src={bgMain} alt="background" />
         <div className={Style.box_title}>
-          <p className={Style.txt_main_title}>
-            여행을 더 재밌게
-            <br />
-            기록해 주는
-            <br />
-            트립체인입니다
-          </p>
+          {frontState.windowWidth > 1280 ? (
+            <p className={Style.txt_main_title}>
+              여행을 더 재밌게 기록해 주는
+              <br />
+              트립체인입니다
+            </p>
+          ) : (
+            <p className={Style.txt_main_title}>
+              여행을 더 재밌게
+              <br />
+              기록해 주는
+              <br />
+              트립체인입니다
+            </p>
+          )}
+
           <p className={Style.txt_sub_title}>
             AI가 그린 내 여행 기록을
             <br />

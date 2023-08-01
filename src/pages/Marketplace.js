@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Style from "../css/pages/Marketplace.module.css";
 
 // 나중에 삭제
-import imgNFT from "../images/bg_main_mobile.png";
+import imgNFT from "../images/img_complete.svg";
 
 const Marketplace = () => {
   // 브라우저 너비 값에 맞게 width, height 값 가변 적용
@@ -31,7 +31,7 @@ const Marketplace = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [window.innerWidth, windowWidth]);
+  }, [windowWidth]);
 
   return (
     <div className={Style.box_marketplace}>
