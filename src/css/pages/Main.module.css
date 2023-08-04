@@ -101,6 +101,7 @@
   }
 
   .box_background > img {
+    width: unset;
     max-height: calc(var(--vh, 1vh) * 100);
   }
 

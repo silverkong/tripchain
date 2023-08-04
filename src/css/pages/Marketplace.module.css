@@ -51,6 +51,10 @@
   margin-top: 15px;
 }
 
+.box_nft_sell > .box_nft_image > img {
+  width: 100%;
+}
+
 .box_nft_sell > .box_nft_info {
   margin-top: 15px;
 }
@@ -73,4 +77,126 @@
   color: var(--color-black);
   font-size: var(--font-size);
   font-weight: 400;
+}
+
+/* Detail */
+.box_marketplace_detail {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+}
+
+.box_marketplace_detail > .box_marketplace_detail_image {
+  overflow: hidden;
+}
+
+.box_marketplace_detail > .box_marketplace_detail_info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 22px;
+}
+
+.box_marketplace_detail
+  > .box_marketplace_detail_info
+  > .box_marketplace_detail_seller {
+  display: flex;
+  align-items: center;
+}
+
+.box_marketplace_detail
+  > .box_marketplace_detail_info
+  > .box_marketplace_detail_seller
+  > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.box_marketplace_detail
+  > .box_marketplace_detail_info
+  > .box_marketplace_detail_seller
+  > div
+  > img {
+  width: 100%;
+}
+
+.box_marketplace_detail
+  > .box_marketplace_detail_info
+  > .box_marketplace_detail_seller
+  > span {
+  color: var(--color-black);
+  font-size: var(--font-size);
+  font-weight: 400;
+}
+
+.box_marketplace_detail > .box_marketplace_detail_info > .txt_nft_title {
+  margin-top: 10px;
+  color: var(--color-black);
+  font-size: calc(var(--font-size) * 1.5);
+  font-weight: 500;
+}
+
+.box_marketplace_detail > .box_marketplace_detail_info > .txt_nft_owner {
+  margin-top: 10px;
+  color: var(--color-black-secondary);
+  font-size: var(--font-size);
+  font-weight: 400;
+}
+
+.box_marketplace_detail > .box_marketplace_detail_info > .txt_nft_owner > span {
+  font-weight: 500;
+}
+
+.box_marketplace_detail > .box_marketplace_detail_info > hr {
+  height: 1px;
+  background-color: var(--color-disabled);
+  margin: 30px 0;
+}
+
+.box_marketplace_detail > .box_marketplace_detail_info > .box_nft_sales_type,
+.box_marketplace_detail > .box_marketplace_detail_info > .box_nft_current_price,
+.box_marketplace_detail > .box_marketplace_detail_info > .box_nft_auction_end {
+  display: flex;
+  flex-direction: column;
+}
+
+.box_marketplace_detail > .box_marketplace_detail_info > .box_nft_sales_type {
+  margin-bottom: 20px;
+}
+
+.box_marketplace_detail
+  > .box_marketplace_detail_info
+  > .box_nft_sales_type
+  > span:first-child,
+.box_marketplace_detail
+  > .box_marketplace_detail_info
+  > .box_nft_current_price
+  > span:first-child,
+.box_marketplace_detail
+  > .box_marketplace_detail_info
+  > .box_nft_auction_end
+  > span:first-child {
+  color: var(--color-black-secondary);
+  font-size: var(--font-size);
+}
+
+.box_marketplace_detail
+  > .box_marketplace_detail_info
+  > .box_nft_sales_type
+  > span:last-child,
+.box_marketplace_detail
+  > .box_marketplace_detail_info
+  > .box_nft_current_price
+  > span:last-child,
+.box_marketplace_detail
+  > .box_marketplace_detail_info
+  > .box_nft_auction_end
+  > span:last-child {
+  color: var(--color-black);
+  font-size: calc(var(--font-size) * 1.8);
 }

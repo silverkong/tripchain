@@ -1,6 +1,6 @@
 // 초기값
 let initialState = {
-  windowWidth: 0,
+  windowWidth: window.innerWidth,
 };
 
 function reducerFront(state = initialState, action) {

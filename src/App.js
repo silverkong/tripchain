@@ -1,7 +1,7 @@
 /**
  * Tripchain
  * @developer Sueun Cho, Rok Kwak, Eunbeen Jung, DoHyun Lim
- * @version 1.2.0
+ * @version 1.3.0
  */
 
 import "./App.css";
@@ -27,6 +27,7 @@ import Signup from "./pages/Signup";
 import NFTCreate from "./pages/NFTCreate";
 import NFTLoad from "./pages/NFTLoad";
 import NFTComplete from "./pages/NFTComplete";
+import MarketplaceDetail from "./pages/MarketplaceDetail";
 
 function App() {
   const dispatch = useDispatch();
@@ -61,14 +62,19 @@ function App() {
   return (
     <div>
       {locationNow.pathname === "/signup" ||
-      locationNow.pathname.substring(0, 4) === "/nft" ? (
+      locationNow.pathname.substring(0, 4) === "/nft" ||
+      (locationNow.pathname.substring(0, 12) === "/marketplace" &&
+        locationNow.pathname.substring(12).length > 1) ? (
         <Nav2 />
       ) : (
         <Nav />
       )}
       <Routes>
         <Route path="/" element={<Main />} />
+        {/* Marketplace */}
         <Route path="/marketplace" element={<Marketplace />} />
+        <Route path="/marketplace/:id" element={<MarketplaceDetail />} />
+        {/* Profile, Login, Signup */}
         <Route path="/profile" element={<Profile />} />
         <Route
           path="/login"
@@ -81,7 +87,9 @@ function App() {
         <Route path="/nft/complete" element={<NFTComplete />} />
       </Routes>
       {locationNow.pathname === "/signup" ||
-      locationNow.pathname.substring(0, 4) === "/nft" ? null : (
+      locationNow.pathname.substring(0, 4) === "/nft" ||
+      (locationNow.pathname.substring(0, 12) === "/marketplace" &&
+        locationNow.pathname.substring(12).length > 1) ? null : (
         <BottomNav authenticate={authenticate} />
       )}
     </div>
