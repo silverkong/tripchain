@@ -1,3 +1,3 @@
 # Tripchain
 
-AI와 블록체인을 활용한 이미지 생성 서비스 및 NFT Marketplace, tripchain
+트립체인 프론트엔드 작업물입니다
