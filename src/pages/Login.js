@@ -10,6 +10,7 @@ import RoundSolidButton from "../components/button/RoundSolidButton";
 
 const Login = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const goToSignup = () => {
     navigate("/signup");

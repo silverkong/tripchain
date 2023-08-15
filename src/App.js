@@ -1,7 +1,7 @@
 /**
  * Tripchain
- * @developer Sueun Cho, Rok Kwak, Eunbeen Jung, DoHyun Lim
- * @version 1.3.0
+ * @developer Rok Kwak, Eunbeen Jung
+ * @version 1.4.0
  */
 
 import "./App.css";
@@ -41,7 +41,7 @@ function App() {
   const [authenticate, setAuthenticate] = useState(false);
   useEffect(() => {}, [authenticate]);
 
-  // 위치 확인
+  // 페이지 위치 확인
   const locationNow = useLocation();
 
   // window.innerWidth resize
