@@ -69,6 +69,7 @@
   font-weight: 600;
 }
 
+/* Profile NFT List */
 .box_profile > .box_nft_list > div > .label_nft_list_content {
   display: flex;
   align-items: center;
@@ -78,6 +79,7 @@
   background-image: url(../../images/ic_checkbox_off.svg);
   background-repeat: no-repeat;
   background-position-y: center;
+  cursor: pointer;
 }
 
 .box_profile > .box_nft_list > div > input {
@@ -145,4 +147,164 @@
   > .label_nft_list_content
   > .txt_nft_list_content_price {
   margin-left: auto;
+}
+
+.btn_solid {
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+  height: 60px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size);
+  font-weight: 500;
+}
+
+.box_account {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.txt_metamask_account {
+  display: inline-block;
+  width: 200px;
+  color: var(--color-gray);
+  font-size: var(--font-size);
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.box_account > div {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Profile Marketplace */
+.box_list_marketplace {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 22px 0;
+}
+
+.box_list_marketplace > .box_nft_info {
+  display: flex;
+}
+
+.box_list_marketplace > .box_nft_info > .box_nft_image {
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--color-gray);
+  overflow: hidden;
+}
+
+.box_list_marketplace > .box_nft_info > .box_nft_image > img {
+  width: 100%;
+}
+
+.box_list_marketplace > .box_nft_info > .box_nft_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.box_list_marketplace > .box_nft_info > .box_nft_title > h3 {
+  color: var(--color-black);
+  font-size: calc(var(--font-size) * 1.12);
+  font-weight: 500;
+}
+
+.box_list_marketplace > .box_nft_info > .box_nft_title > span {
+  color: var(--color-gray);
+  font-size: var(--font-size);
+  font-weight: 400;
+}
+
+.box_list_marketplace > hr {
+  height: 1px;
+  background-color: var(--color-disabled);
+  margin: 30px 0;
+}
+
+.box_list_marketplace > .box_sales_type > h4,
+.box_list_marketplace > .box_fixed_price > h4,
+.box_list_marketplace > .box_fixed_price_period > h4 {
+  margin-bottom: 20px;
+  color: var(--color-black);
+  font-size: calc(var(--font-size) * 1.12);
+  font-weight: 600;
+}
+
+.box_list_marketplace > .box_fixed_price,
+.box_list_marketplace > .box_fixed_price_period {
+  margin-top: 30px;
+}
+
+/* NFT Listing Type */
+.box_listing_type > input {
+  display: none;
+}
+
+.box_listing_type > .label_listing_type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 110px;
+  margin-top: 10px;
+  padding: 0 22px;
+  border: 1px solid var(--color-disabled);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.box_listing_type > .label_listing_type > h4 {
+  color: var(--color-black);
+  font-size: calc(var(--font-size) * 1.12);
+  font-weight: 500;
+}
+
+.box_listing_type > .label_listing_type > span {
+  color: var(--color-gray);
+  font-size: calc(var(--font-size) * 0.875);
+  font-weight: 400;
+}
+
+.box_listing_type > input:checked + label {
+  border: 1px solid var(--color-primary);
+}
+
+.box_listing_type > input:checked + label > h4 {
+  color: var(--color-primary);
+}
+
+/* NFT Listing Period */
+.box_listing_period {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 22px;
+  border: 1px solid var(--color-disabled);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+select {
+  -webkit-appearance: none; /* for chrome */
+  -moz-appearance: none; /*for firefox*/
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none; /*for IE10,11*/
+}
+
+select {
+  background: url("../../images/ic_arrow_down.svg") no-repeat 95% 50%/15px auto;
 }

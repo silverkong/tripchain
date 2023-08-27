@@ -1,9 +1,3 @@
-/**
- * Tripchain
- * @developer Rok Kwak, Eunbeen Jung
- * @version 1.4.0
- */
-
 import "./App.css";
 import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
@@ -28,6 +22,7 @@ import NFTCreate from "./pages/NFTCreate";
 import NFTLoad from "./pages/NFTLoad";
 import NFTComplete from "./pages/NFTComplete";
 import MarketplaceDetail from "./pages/MarketplaceDetail";
+import ListingMarketplace from "./pages/ListingMarketplace";
 
 function App() {
   const dispatch = useDispatch();
@@ -74,6 +69,10 @@ function App() {
         {/* Marketplace */}
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/marketplace/:id" element={<MarketplaceDetail />} />
+        <Route
+          path="/marketplace/listing/:id"
+          element={<ListingMarketplace />}
+        />
         {/* Profile, Login, Signup */}
         <Route path="/profile" element={<Profile />} />
         <Route
